@@ -1815,6 +1815,11 @@ a {
     width: 100%;
   }
 }
+@media (max-width: 575px) {
+  .u-form-vertical .u-form-group.u-label-left {
+    display: block;
+  }
+}
 .u-label-left {
   display: flex;
 }
@@ -1843,6 +1848,9 @@ a {
   margin-bottom: 0;
   flex-grow: 1;
 }
+.u-form-horizontal .u-form-group.u-label-top:not(.u-form-submit) {
+  width: 100%;
+}
 .u-form-horizontal .u-form-group.u-form-image {
   display: none;
 }
@@ -1852,6 +1860,9 @@ a {
 .u-form-horizontal .u-form-submit {
   display: flex;
   flex-grow: 0 !important;
+}
+.u-form-horizontal .u-form-submit label {
+  display: none !important;
 }
 .u-form-horizontal .u-form-group.u-label-top.u-form-submit {
   align-self: flex-end;
@@ -2265,6 +2276,18 @@ a {
 }
 .u-form-horizontal .u-form-rating.u-form-group {
   display: none;
+}
+.u-form-gallery.u-layout-grid .u-back-slide {
+  height: auto;
+}
+.u-form-gallery.u-layout-grid .u-over-slide {
+  display: flex;
+  position: relative;
+  height: auto;
+}
+.u-form-gallery.u-layout-grid input {
+  margin: 0;
+  vertical-align: middle;
 }
 *,
 *:before,
@@ -6368,6 +6391,8 @@ section.u-image:not(.u-hover-box),
 }
 .u-inner-container-layout,
 .u-inner-container-layout > *,
+.u-group-elements,
+.u-group-elements > *,
 .u-container-layout > * {
   position: relative;
 }
@@ -13836,6 +13861,9 @@ div.u-video,
 }
 .u-nav-popup .u-nav-item {
   height: auto;
+}
+.u-nav-popup .u-nav:not([class*="u-align-"]) .u-nav {
+  text-align: inherit;
 }
 .u-nav-container .u-nav-popup {
   position: absolute;
@@ -38222,16 +38250,17 @@ a.u-link.u-text-hover-grey-90:hover {
 
 /*end-variables sitestylecss*/
  .u-header {
-  background-image: none;
+  background-image: linear-gradient(0deg, rgba(0,0,0,0.35), rgba(0,0,0,0.35)), url("images/original.png");
+  background-position: 50% 50%;
 }
 
 .u-header .u-sheet-1 {
-  min-height: 54px;
+  min-height: 100px;
   margin: 0 auto;
 }
 
 .u-header .u-menu-1 {
-  margin: 18px 25px 0 auto;
+  margin: 18px 24px 0 auto;
 }
 
 .u-header .u-nav-1 {
@@ -38244,32 +38273,39 @@ a.u-link.u-text-hover-grey-90:hover {
 
 .u-header .u-text-1 {
   font-weight: 700;
-  font-size: 1.25rem;
+  font-size: 1.875rem;
   transition-duration: 0.5s;
-  margin: -32px 823px 0 0;
+  margin: -28px 712px 26px 0;
 }
 @media (max-width: 1199px) {
+  .u-header .u-sheet-1 {
+    min-height: 84px;
+  }
+
   .u-header .u-menu-1 {
     margin-right: 0;
   }
 
   .u-header .u-text-1 {
-    margin-right: 623px;
+    margin-top: -28px;
+    margin-right: 512px;
   }
 }
 @media (max-width: 991px) {
   .u-header .u-text-1 {
-    margin-right: 403px;
+    margin-top: 20px;
+    margin-right: 292px;
   }
 }
 @media (max-width: 767px) {
   .u-header .u-text-1 {
-    margin-right: 223px;
+    margin-top: -28px;
+    margin-right: 112px;
   }
 }
 @media (max-width: 575px) {
   .u-header .u-text-1 {
-    margin-right: 23px;
+    margin-right: 0;
   }
 }
 .u-header .u-text-1, .u-header .u-text-1:before, .u-header .u-text-1 > .u-container-layout:before {
@@ -38277,11 +38313,11 @@ a.u-link.u-text-hover-grey-90:hover {
 }
 .u-header .u-text-1.u-text-1.u-text-1:hover {
     transform: scale(1.1) translateX(0px) translateY(0px) !important;
-    color: #b29a36 !important
+    color: #000000 !important
 }
 .u-header .u-text-1.u-text-1.u-text-1.hover {
     transform: scale(1.1) translateX(0px) translateY(0px) !important;
-    color: #b29a36 !important
+    color: #000000 !important
 }
 .u-header .u-container-layout:hover .u-text-1 {
     transform: rotate(0deg) scale(1) translateX(0px) translateY(0px) !important
