@@ -4,6 +4,9 @@ This application is built mainly using Python. The user can choose from the drop
 
 - # The Project
   We built this application in order to have an easier and deeper understanding of the most important sorting algorithms using Python and tkinter library
+  
+ # Illustration of the Visualization:
+ ![Sorting Algorithms Visualization using Python](https://user-images.githubusercontent.com/99495858/206155512-79d3ccd0-478e-4a3f-830c-4816e29e479a.gif)
 
 # The algorithms used:
 
